@@ -274,52 +274,12 @@ address {
 .section-img > img {
   border: 1px solid var(--cornflower-color);
 }
-.partfolio-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--iris-color);
-  background-color: var(--cloud-color);
-  cursor: pointer;
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-.partfolio-button:hover {
-  color: var(--white-color);
-  background-color: var(--ocean-color);
-  border: 1px solid transparent;
-  border-radius: 4px;
 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.partfolio-button:focus {
-  color: var(--white-color);
-  background-color: var(--ocean-color);
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 .section-team-container {
   display: flex;
   gap: 24px;
 }
-.partfolio-container {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-}
-.img-container-partfolio {
-  display: flex;
-  flex-wrap: wrap;
 
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--cornflower-color);
@@ -342,10 +302,7 @@ address {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.partfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+
 .card-content-title {
   margin-bottom: 8px;
 }
@@ -471,15 +428,9 @@ address {
   border-color: #404bbf;
   color: #404bbf;
 }
-/* .customers-item:hover {
-  border-color: #404bbf;
-}
-.customers-item:hover .client {
-  fill: #404bbf;
-} */
 .client {
   margin: 16px 32px;
-  color: #4d5ae5;
+
   fill: currentColor;
 }
 
@@ -514,9 +465,6 @@ address {
   display: flex;
   align-items: baseline;
 }
-/* .footer-div {
-  margin-left: 120px;
-} */
 .footer-label {
   margin-right: 120px;
 }
@@ -562,36 +510,6 @@ address {
 }
 .footer-ellipse {
   fill: #f4f4fd;
-}
-/*
-====================
-  PARTFOLIO-OVERLAY
-====================
-*/
-.img-wrapper {
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 164px;
-  background: var(--iris, #4d5ae5);
-  transform: translatey(100%);
-  transition: transform var(--anim);
-}
-
-.text-overlay {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud, #f4f4fd);
-}
-.section-img-items:hover .overlay {
-  transform: translatey(0);
 }
 /*
 ====================
@@ -646,18 +564,122 @@ address {
 .modal-batton:hover {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 .modal-batton:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-svg:hover {
-  fill: #ffffff;
+/*
+====================
+     PARTFOLIO
+====================
+*/
+.partfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
-..modal-svg:focus {
-  fill: #ffffff;
+.partfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.img-container-partfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+/*
+====================
+  PARTFOLIO-BUTTON
+====================
+*/
+.partfolio-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris-color);
+  background-color: var(--cloud-color);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partfolio-button:hover {
+  color: var(--white-color);
+  background-color: var(--ocean-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.partfolio-button:focus {
+  color: var(--white-color);
+  background-color: var(--ocean-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: зі значенням 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/*
+====================
+  PARTFOLIO-CARDS
+====================
+*/
+.partfolio-img {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partfolio-img:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+/*
+====================
+  PARTFOLIO-OVERLAY
+====================
+*/
+.img-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.overlay {
+  top: 0;
+  left: 0;
+
+  background: var(--iris, #4d5ae5);
+}
+
+.text-overlay {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  top: 0;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-img-items:hover .overlay {
+  transform: translatey(0);
 }
